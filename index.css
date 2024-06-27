@@ -1,0 +1,236 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+#landing {
+    background-color: #808080;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.landing-content {
+    display: flex;
+    align-items: right;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.landing-content img {
+    border-radius: 50%;
+    margin-bottom: 1em;
+
+}
+
+#projects {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.projects-content {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly with space around them */
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+}
+
+.project-card {
+    width: calc(30% - 20px); /* Adjust width for three columns with margins */
+    margin: 10px; /* Add margin between project cards */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Align text content to the center */
+}
+
+.project-card img {
+    max-width: 100%; /* Ensure images fit within their containers */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.project-card h3 {
+    margin-top: 16px; /* Adjust spacing for heading */
+}
+
+.project-card p {
+    margin-bottom: 0; /* Remove bottom margin for paragraphs */
+}
+
+
+#tools {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tools-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tools-category {
+    text-align: center;
+}
+
+.tools-category img {
+    margin: 0.5em;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.map-section, .contact-section {
+    width: 100%; /* Take full width on small screens */
+    max-width: 600px; /* Limit max-width as needed */
+    margin: 0 auto 20px; /* Center and add margin between sections */
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+}
+
+.contact-section {
+    width: 100%;
+    max-width: 400px; /* Adjust max-width as needed */
+}
+
+.contact-section h3 {
+    margin-top: 0; /* Remove top margin for better alignment */
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+}
+
+.contact-content .contact-form {
+    margin-bottom: 20px; /* Add space between form and contact info */
+}
+
+.contact-content .contact-form .form-group {
+    margin-bottom: 10px; /* Adjust margin between form groups */
+}
+
+.contact-content .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-content .contact-form input,
+.contact-content .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-content .contact-form textarea {
+    resize: vertical;
+}
+
+.contact-content .contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-content .contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-content .contact-info {
+    text-align: left; /* Align contact info to the left */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 0.5em 0;
+    }
+    
+    .landing-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .projects-content, .tools-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-card {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+}
+.social-icons img {
+    margin-right: 30px; 
+}
